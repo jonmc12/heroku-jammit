@@ -29,7 +29,7 @@ module Heroku::Command
 
       display "===== Commiting assets...", false
 
-        run "git add '#{package_path}' && git commit -m 'assets at #{formatted_date(Time.now)}'"
+        run "git add -f '#{package_path}' && git commit -m 'assets at #{formatted_date(Time.now)}'"
 
       display "===== Done..."
     end
