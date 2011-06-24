@@ -24,7 +24,7 @@ module Heroku::Command
       is_root?
 
       display "===== Compiling assets...", false
-
+      display "#{package_path}"
         run "jammit -f"
 
       display "===== Commiting assets...", false
